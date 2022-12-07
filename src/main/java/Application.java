@@ -20,11 +20,11 @@ public class Application {
     private final int count = 1000;
     private final StringGenerator sg = new StringGenerator();
     private final SortAlgorithm[] myAlg = {
-            new algorithms.BubbleSort(),
+            //new algorithms.BubbleSort(),
             new algorithms.InsertionSort(),
-            new algorithms.MergeSort(),
-            new algorithms.QuickSort(),
-            new algorithms.HeapSort()
+            //new algorithms.MergeSort(),
+            //new algorithms.QuickSort(),
+            //new algorithms.HeapSort()
     };
 
     /**
@@ -40,7 +40,7 @@ public class Application {
             for(DegreeSorted degreeSorted : DegreeSorted.values()){
                 List<String> list = sg.presort(path.getPath(),degreeSorted);
                 for(SortAlgorithm alg : myAlg){
-                    Output output = new Output(alg.getName(),getComplexity(alg,list), isStable(alg), isSorted(alg, list), isPreSorted(list) ,path.getSize(), degreeSorted);
+                    Output output = new Output(alg.getName(),getComplexity(alg,list), isStable(alg), isSorted(alg,list), isPreSorted(list) ,path.getSize(), degreeSorted);
                     System.out.println(output);
                     writeToOutputFiles(output);
                 }

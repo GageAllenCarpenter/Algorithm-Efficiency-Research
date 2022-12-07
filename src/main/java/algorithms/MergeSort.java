@@ -41,19 +41,19 @@ public class MergeSort extends SortAlgorithm {
         List<T> first = new ArrayList<>(list.subList(0, list.size() / 2));
         List<T> second = new ArrayList<>(list.subList(first.size(), list.size()));
 
+        complexityCount++;
         //Sort each half recursively
         mergeSort(first);
         mergeSort(second);
         //Merge both halves together, overwriting to original array
-
+        complexityCount++;
         merge(first, second, list);
         return complexityCount;
     }
 
     /**
      * Merges the two lists together in ascending order.
-     *
-     * @param first The first list to merge
+     *     * @param first The first list to merge
      * @param second The second half of the array to be merged.
      * @param result The list that will contain the merged elements.
      */
@@ -71,7 +71,6 @@ public class MergeSort extends SortAlgorithm {
         //and move smaller element at iMerged
         while (iMerged < result.size()) {
             boolean pickFirst;
-            complexityCount++;
             if (iFirst >= first.size()) {
                 pickFirst = false;
             } else {

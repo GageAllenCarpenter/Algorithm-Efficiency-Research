@@ -20,19 +20,19 @@ public class HeapSort extends SortAlgorithm {
      * @return The number of elementary operations performed
      */
     @Override
-    public <T extends Comparable<T>> long sort(List<T> arr) //Building and extracting both occur N times so they are both elementary operations
+    public <T extends Comparable<T>> long sort(List<T> arr)
     {
         int N = arr.size();
 
         // Build heap (rearrange array)
         for (int i = N / 2 - 1; i >= 0; i--) {
-            complexityCount++; // There cannot be any other operations that is performed more frequently than this
+            complexityCount++;
             heapify(arr, N, i);
         }
 
         // One by one extract an element from heap
         for (int i = N - 1; i > 0; i--) {
-            complexityCount++; // There cannot be any other operations that is performed more frequently than this
+            complexityCount++;
             T temp = arr.get(0);
             arr.set(0, arr.get(i));
             arr.set(i, temp);
@@ -44,7 +44,7 @@ public class HeapSort extends SortAlgorithm {
 
     // To heapify a subtree rooted with node i which is
     // an index in arr[]. n is size of heap
-    <T extends Comparable<T>> void heapify(List<T> arr, int N, int i)
+    <T extends Comparable<T>> void heapify(List<T> arr, int N, int i) // O(
     {
         int largest = i; // Initialize largest as root
         int l = 2 * i + 1; // left = 2*i + 1

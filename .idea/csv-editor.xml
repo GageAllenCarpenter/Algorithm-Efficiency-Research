@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\src\main\resources\OutputData\BubbleSort.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\src\main\resources\OutputData\BubbleSortPARTIALLY_SORTED.csv">
           <value>
             <Attribute>
@@ -32,20 +25,6 @@
           </value>
         </entry>
         <entry key="\src\main\resources\OutputData\BubbleSortUNSORTED.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\src\main\resources\OutputData\DefaultSORTED.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\src\main\resources\OutputData\HeapSort.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -80,7 +59,14 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\src\main\resources\OutputData\InsertionSort.csv">
+        <entry key="\src\main\resources\OutputData\InsertionSortPARTIALLY_UNSORTED.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\resources\OutputData\InsertionSortSORTED.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -94,7 +80,21 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\src\main\resources\OutputData\MergeSort.csv">
+        <entry key="\src\main\resources\OutputData\MergeSortPARTIALLY_SORTED.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\resources\OutputData\MergeSortPARTIALLY_UNSORTED.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\resources\OutputData\MergeSortSORTED.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -102,13 +102,6 @@
           </value>
         </entry>
         <entry key="\src\main\resources\OutputData\MergeSortUNSORTED.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\src\main\resources\OutputData\QuickSort.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

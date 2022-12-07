@@ -85,7 +85,7 @@ public class QuickSort extends SortAlgorithm {
      * @return The complexity of the algorithm.
      */
     private <T extends Comparable<T>> boolean check(List<T> list, int a, int b, int c) {
-        complexityCount++; // There cannot be any other operations that is performed more frequently than this
+        complexityCount++;
         return list.get(a).compareTo(list.get(c)) <= 0 && list.get(c).compareTo(list.get(b)) <= 0;
     }
 

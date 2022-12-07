@@ -218,7 +218,7 @@ public enum Paths {
     public String getPath() {
         return path;
     }
-    
+
     public int getSize() {
         return size;
     }
